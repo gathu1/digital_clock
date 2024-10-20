@@ -1,19 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.hero{
+.hero {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #08001f, #30197d);
+    background: linear-gradient(45deg, #0D324D, #7F5A83);
     color: #fff;
     position: relative;
 }
 
-.container{
+.container {
     width: 800px;
     height: 180px;
     position: absolute;
@@ -22,10 +22,10 @@
     transform: translate(-50%, -50%);
 }
 
-.clock{
+.clock {
     width: 100%;
     height: 100%;
-    background: rgba(235, 0, 255, 0.11);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -33,11 +33,11 @@
     backdrop-filter: blur(40px);
 }
 
-.container::before{
+.container::before {
     content: '';
     width: 180px;
     height: 180px;
-    background: #f41b75;
+    background: #FF6B6B;
     border-radius: 5px;
     position: absolute;
     left: -50px;
@@ -45,11 +45,11 @@
     z-index: -1;
 }
 
-.container::after{
+.container::after {
     content: '';
     width: 180px;
     height: 180px;
-    background: #419aff;
+    background: #FFD93D;
     border-radius: 50%;
     position: absolute;
     right: -30px;
@@ -57,15 +57,16 @@
     z-index: -1;
 }
 
-.clock span{
+.clock span {
     font-size: 80px;
     width: 110px;
     display: inline-block;
     text-align: center;
     position: relative;
+    color: #00D9F9; /* Neon effect for text */
 }
 
-.clock span::after{
+.clock span::after {
     font-size: 16px;
     position: absolute;
     bottom: -5px;
@@ -73,14 +74,14 @@
     transform: translateX(-50%);
 }
 
-#hrs::after{
+#hrs::after {
     content: 'HOURS';
 }
 
-#min::after{
+#min::after {
     content: 'MINS';
 }
 
-#sec::after{
+#sec::after {
     content: 'SEC';
 }
